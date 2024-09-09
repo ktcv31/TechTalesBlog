@@ -1,0 +1,39 @@
+<div class="text">
+	<div class="container blogBoxCont">
+		<div class="row headerRow">
+			<div class="col-8">
+				<h2 class="blogTitle text-uppercase">{{blog.title}}</h2>
+			</div>
+			<div class="col-4">
+				<p class="blogCreate text-right">Created by {{blog.user.username}} on {{format_date blog.date_created}}
+				</p>
+			</div>
+		</div>
+		<p class="text-center blogDescTwo">{{blog.description}}</p>
+	</div>
+</div>
+
+{{#if loggedIn}}
+
+<form id="comment-form" class="new-comment-form formCont d-flex flex-wrap justify-content-center" data-blogid={{blog.id}}>
+	<div class="textAreaCont p-2">
+		<textarea id='comment-text' name="comment-body" placeholder="Enter a comment here..." cols="30"
+			rows="2"></textarea>
+	</div>
+	<div class="btnComment p-2">
+		<button class="button btn btn-success" type="submit">Add Comment</button>
+	</div>
+</form>
+
+{{/if}}
+
+<h2 class="text-center">Comments</h2>
+{{#each blog.comments as |comment|}}
+<div class="commentCont">
+	<p class="text-center commentText">{{comment.comment_text}}</p>
+	<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{format_date
+		created_at}}<span>~</span></p>
+</div>
+{{/each}}
+
+<script src="/js/comment.js"></script>

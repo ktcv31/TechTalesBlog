@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "tatianacarvajal",
+      "password": "Noralbavargas31",
+      "database": "tech_talesblog_db",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    },
+    "test": {
+      "username": "tatianacarvajal",
+      "password": "Noralbavargas31",
+      "database": "tech_talesblog_db",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    },
+    "production": {
+      "username": "tatianacarvajal",
+      "password": "Noralbavargas31",
+      "database": "tech_talesblog_db",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    }
+  }
+  
