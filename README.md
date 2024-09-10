@@ -74,7 +74,7 @@ To install and run this application locally, follow these steps:
 
 2. Dashboard
 
-    ![Dashboard Screenshot](Screenshot%202024-09-09%20at%2010.05.33 PM.png/Screenshot 2024-09-09 at 10.05.33 PM.png)
+    ![Dashboard Screenshot](./Screenshot%202024-09-09%20at%2010.05.33 PM.png)
 
 
 
